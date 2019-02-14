@@ -1,5 +1,7 @@
 # Registrator
 
+![](julia_id.jpg)
+
 Contributions are welcome: [Registrator.jl](https://github.com/JuliaComputing/Registrator.jl)
 
 Click [here](https://github.com/apps/registratortest/installations/new) to install.
