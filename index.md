@@ -1,6 +1,6 @@
 # Registrator
 
-![](julia_id.jpg)
+![](julia_id.jpg =200x200)
 
 Contributions are welcome: [Registrator.jl](https://github.com/JuliaComputing/Registrator.jl)
 
