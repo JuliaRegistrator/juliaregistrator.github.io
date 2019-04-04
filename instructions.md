@@ -1,9 +1,12 @@
-#### How to use
+#### Usage
 
-1) Using an issue:
+Registration is triggered on github by mentioning the bot by name using the markdown "``` @JuliaRegistrator `$command` ```" with the appropriate `$command`. The bot must first be **installed on your repository** for this to work.
 
-Raise an issue in the package you wish to register. Add "@JuliaRegistrator `register()`" somewhere in the content of the issue if you are a collaborator to trigger Registrator. If you are not a collaborator ask someone who is to comment "@JuliaRegistrator `register()`" on the issue. This will make Registrator add a pull request to General with the appropriate changes. Registrator will look for the project file in the master branch by default. To use a custom branch comment with `register(name-of-your-branch)`.
+The bot will only respond to new comments coming **from maintainers or collaborators**. If you're not a collaborator you will need to ask a maintainer or collaborator to trigger registration for you.
 
-2) Using a commit comment:
+The bot listens for comments on both GitHub issues and commits so you can either:
 
-On GitHub click on a commit that you wish to register. In the comment section below say "@JuliaRegistrator `register()`". Note that you must be a collaborator in order to do this.
+* **Raise a GitHub issue** and add "@JuliaRegistrator `register()`" somewhere in the content of the issue. Alternatively a collaborator can do this for you by adding a new comment to the issue. Registrator will use the project file in the master branch by default but you can use a custom release branch with the command `register(name-of-your-branch)`.
+* Alternatively, **click on particular a GitHub commit** and write "@JuliaRegistrator `register()`" in the comment section. Note that you must be a collaborator in order to do this.
+
+Registrator will then create a pull request to the General registry using the version information in the project file on your branch or commit.
